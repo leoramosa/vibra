@@ -1,0 +1,293 @@
+.theme_dark {
+	&.landing_4,
+	&.landing_5 {
+		.social-section {
+			background-color: $bg-dark-landing-4;
+		}
+	}
+
+	&.landing_4  {
+		.black-theme-dark {
+			&.scheme-section,
+			&.scheme-section-twocolumns {
+				background-color: transparent;
+			}
+		}
+
+		.social-section {
+			margin-left: $grid-gutter-width / 2;
+			margin-right: $grid-gutter-width / 2;
+		}
+
+		.table-card {
+			color: $white;
+		}
+	}
+
+	&.landing_5 {
+		.black-theme-dark {
+			.btn {
+				&.disabled,
+				&[disabled] {
+					background-color: #3b3b40;
+					color: #6e6b6e !important;
+				}
+			}
+		}
+	}
+
+	hr {
+		border-top-color: rgba(#fff, .4);
+	}
+
+	.social-section {
+		background-color: $black;
+		color: $white;
+	}
+
+	.social-networks {
+		a {
+			color: $white;
+			border-color: $white;
+
+			&:hover,
+			&:focus {
+				background-color: $white;
+				color: $black;
+			}
+		}
+	}
+
+	.black-theme-dark {
+		background-color: $black;
+		color: $white;
+
+		&.scheme-section,
+		&.scheme-section-twocolumns {
+			background-color: #121212;
+		}
+
+		&.border-top,
+		&.border-bottom {
+			border-color: transparent !important;
+		}
+
+		.btn-light,
+		.btn-outline-light,
+		.btn-outline-info,
+		.jcf-select.jcf-select-info-style {
+			border-color: $info;
+			color: $white;
+			background-clip: border-box;
+			background-size: 110% 100%;
+			background-position: 50% 50%;
+
+			&:hover,
+			&:focus,
+			&:active {
+				background-image: linear-gradient(258deg, #2e42b2 0%, #2b2f8e 100%);
+				background-color: transparent;
+				border-color: transparent;
+			}
+		}
+
+		.btn {
+			&.disabled,
+			&[disabled] {
+				background-color: $dark;
+				color: $secondary !important;
+			}
+
+			.text-vtr-com-white {
+				@include visible;
+			}
+
+			.text-vtr-com-black {
+				@include invisible;
+			}
+		}
+	}
+
+	.get-tickets-container,
+	.choose-tickets-container,
+	.choose-date-container {
+		.btn-secondary {
+			@include btn-custom-color($info, $white, $white);
+		}
+
+		.btn-outline-secondary {
+			@include btn-outline-custom-color($info, $white);
+		}
+	}
+
+	.choose-tickets-container,
+	.choose-date-container {
+		.card {
+			&.bg-light {
+				background-color: rgba(43, 44, 54, 0.79) !important;
+				border-color: $table-border-color-light;
+				color: $white;
+			}
+		}
+
+		.btn {
+			color: $white;
+		}
+
+		.btn-back {
+			@include btn-custom-color($white, #4672e2, #4672e2);
+			border-color: $white;
+		}
+	}
+
+	.choose-date-container {
+		&.selected {
+		  background-color: $black;
+
+		  .datepicker-button {
+		  	color: $info;
+
+				button.form-control {
+					background-color: $white;
+
+					&:hover,
+					&:focus {
+						background-color: darken($white, 15%);
+					}
+				}
+			}
+		}
+	}
+
+	.nav-drop {
+		.btn-secondary {
+			@include btn-custom-color(#2b2f8e, $white, $white);
+		}
+
+		.btn-outline-secondary {
+			@include btn-outline-custom-color(#2b2f8e, $white);
+		}
+	}
+
+	table {
+		color: inherit;
+	}
+
+	.table:not(.table-bordered) {
+		thead {
+			th {
+				border-top-color: transparent !important;
+			}
+		}
+
+		// thead,
+		// tbody {
+		// 	tr {
+		// 		&:first-child {
+		// 			th, td {
+		// 				border-top-color: transparent;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+		th,
+		td,
+		tbody tr:last-child td,
+		tbody tr td:last-child,
+		tbody tr td:first-child {
+			border-color: $table-border-color-light;
+		}
+	}
+
+	.table {
+		&.table-bordered {
+			thead {
+				th {
+					border-top-color: $table-border-color-light-alt;
+				}
+			}
+
+			th,
+			td,
+			tbody tr:last-child td,
+			tbody tr td:last-child,
+			tbody tr td:first-child {
+				border-color: $table-border-color-light-alt;
+			}
+		}
+
+		thead,
+		tbody {
+			tr {
+				td, th {
+					&:last-child {
+						border-color: $table-border-color-light-alt;
+					}
+				}
+			}
+		}
+	}
+
+	.table-card {
+		background-color: $bg-dark-landing-4;
+
+		.table {
+			th,
+			td,
+			tbody tr:last-child td,
+			tbody tr td:last-child,
+			tbody tr td:first-child {
+				border-color: $border-color-light;
+			}
+		}
+	}
+
+	.hidden-theme-dark {
+		display: none !important;
+	}
+
+	.visible-theme-dark {
+		display: block !important;
+	}
+
+	.datepicker-container {
+		&.selected {
+			@include media-breakpoint-down(sm) {
+				background-color: $black;
+			}
+
+			.ticket-datepicker-alt-field {
+				outline: none;
+
+				@include media-breakpoint-down(sm) {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.datepicker-card {
+		&.bg-secondary {
+			background-color: #121212 !important;
+		}
+	}
+
+	.ticket-datepicker {
+		.not-available {
+			a {
+				background-color: #21222a;
+				border-color: rgba(#fff, .075);
+				color: #6e6b6e;
+			}
+		}
+	}
+
+	.datepicker-results-frame {
+		background-color: $black;
+	}
+}
+
+.visible-theme-dark {
+	display: none !important;
+}

@@ -1,0 +1,79 @@
+.theme_light {
+	&.landing_4 {
+		.scheme-section,
+		.scheme-section-twocolumns {
+			background-color: transparent;
+		}
+	}
+
+	&.landing_5 {
+		.table {
+			color: $white;
+		}
+	}
+
+	.social-section {
+		background: $white;
+		border: solid $gray-200;
+		border-width: 1px 0;
+	}
+
+	.scheme-section,
+	.scheme-section-twocolumns {
+		background-color: $white;
+	}
+
+	.btn-light,
+	.btn-outline-light {
+		border-color: $warning;
+		color: inherit;
+		background-clip: border-box;
+		background-size: 110% 100%;
+		background-position: 50% 50%;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-image: linear-gradient(255deg, #e46709 0%, #d31f4e 100%);
+			border-color: transparent;
+			color: $white;
+		}
+	}
+
+	.hidden-theme-light {
+		display: none !important;
+	}
+
+	.get-tickets-container,
+	.choose-tickets-container,
+	.choose-date-container {
+		.btn-secondary {
+			@include btn-custom-color($warning, $white, $white);
+		}
+
+		.btn-outline-secondary {
+			@include btn-outline-custom-color($warning, $white);
+		}
+	}
+
+	.nav-drop {
+		.btn-secondary {
+			@include btn-custom-color($pink, $white, $white);
+		}
+
+		.btn-outline-secondary {
+			@include btn-outline-custom-color($pink, $white);
+		}
+	}
+
+	.visible-theme-light {
+		display: block !important;
+	}
+}
+
+.visible-theme-light {
+	display: none !important;
+}
+
+
+
