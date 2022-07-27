@@ -35,11 +35,17 @@
     <link
       rel="image_src"
       type="image/jpeg"
-      href="recursos/images/cop001_rs.jpg"
+      href="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/cop002_rs.jpg"
     />
 
-    <meta property="og:image" content="recursos/images/cop001_rs.jpg" />
-    <meta name="twitter:image" content="recursos/images/cop001_rs.jpg" />
+    <meta
+      property="og:image"
+      content="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/cop002_rs.jpg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/cop002_rs.jpg"
+    />
     <meta property="fb:app_id" content="142076532531892" />
     <meta property="og:type" content="website" />
     <meta
@@ -92,15 +98,30 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="recursos/css/jquery-ui.min.css"
+      href="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/css/jquery-ui.min.css"
     />
-    <link rel="stylesheet" href="recursos/css/bootstrap.css" />
-    <link rel="stylesheet" href="recursos/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/css/main.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
-    <link rel="stylesheet" href="recursos/css/dscountdown.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/css/dscountdown.css"
+    />
+
+    <!--loader-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.teleticket.com.pe/especiales/diaspatrios2022/css/loader.css"
+    />
 
     <!--js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -119,11 +140,57 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="recursos/js/jquery.main.js" defer></script>
-    <script src="recursos/js/datepicker-es.js" defer></script>
+    <script
+      src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/js/jquery.main.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/js/datepicker-es.js"
+      defer
+    ></script>
 
     <!--calendario-->
-    <link rel="stylesheet" href="recursos/css/calendario-nuevo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/css/calendario-nuevo.css"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "539609194515577");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=539609194515577&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <!-- Global site tag (gtag.js) - Google Ads: 407015573 -->
     <script
@@ -196,6 +263,45 @@
     <!-- End Google Tag Manager -->
 
     <style>
+      /*para cabecera y footer*/
+      .pt-nav.dark {
+        background-color: #000;
+      }
+
+      .pt-nav {
+        min-height: 55px;
+        padding: 10px 0;
+        color: white;
+      }
+
+      .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+      }
+
+      .header-cyber {
+        background: #11113f;
+      }
+
+      .td-cyber {
+        background: white;
+        color: #11113f;
+        border-bottom: 1px solid #11113f !important;
+      }
+
+      .btn_inactive {
+        background: #787878d6 !important;
+        color: #cac4c4 !important;
+        cursor: initial;
+        pointer-events: none;
+        border: 2px solid #989898;
+        display: none;
+      }
+
+      /*para cabecera y footer*/
+
       .frase span {
         font-weight: 700;
         color: #f73c8f !important;
@@ -213,6 +319,26 @@
 
       .logo_interbank {
         width: 150px;
+      }
+
+      .badge.badge-uno {
+        background-color: #fa4b3c;
+      }
+
+      .badge.badge-tres {
+        background-color: #ff8a52;
+      }
+
+      .badge.badge-dos {
+        background-color: #d4aa00;
+      }
+
+      .badge.badge-cinco {
+        background-color: #09b297;
+      }
+
+      .badge.badge-cuatro {
+        background-color: #018ece;
       }
 
       @media only screen and (max-width: 800px) {
@@ -236,72 +362,177 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!--inicia loader-->
+    <div class="loadertlk" id="loadertlk">
+      <div class="imgloader" id="logoloaderbeta">
+        <img
+          src="https://cdn.teleticket.com.pe/especiales/sport-boys-vs-usmp-2022/images/logo-loaderbeta.png"
+          alt=""
+        />
+      </div>
+      <div class="imgloader" id="logoloader">
+        <img
+          src="https://cdn.teleticket.com.pe/especiales/sport-boys-vs-usmp-2022/images/logo-loader.png"
+          alt=""
+        />
+      </div>
+
+      <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <script>
+      var ifBeta = window.location.hostname.search("beta");
+      if (ifBeta >= 0) {
+        $("#logoloaderbeta").show();
+        $("#logoloader").hide();
+      } else {
+        $("#logoloader").show();
+        $("#logoloaderbeta").hide();
+      }
+    </script>
+
+    <!--fin loader-->
+
     <div class="wrapper">
       <a href="#header" class="hidden-anchor"></a>
 
-      <nav id="header" class="header cabecera">
-        <div class="container">
-          <nav class="row align-items-center">
-            <div class="col-6 col-md-6">
-              <a class="p-0 m-0" href="https://teleticket.com.pe/">
-                <img
-                  class="img-fluid"
-                  src="https://cdn.teleticket.com.pe/images/logo-teleticket.png"
-                  alt="teleticket.com.pe"
-                />
-              </a>
-            </div>
+      <!---BETA-->
+      <nav id="cabecera2021">
+        <nav
+          id="header"
+          class="header cabecera section-active pt-nav dark sticky-top"
+        >
+          <div class="container">
+            <nav class="row align-items-center">
+              <div class="col-6 col-md-6">
+                <a class="p-0 m-0" href="https://beta.teleticket.com.pe/">
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.teleticket.com.pe/images/logo-teleticket-2022.png"
+                    alt="teleticket.com.pe"
+                  />
+                </a>
+              </div>
 
-            <div class="col-6 col-md-6 text-right">
-              <a
-                href="#"
-                data-toggle="modal"
-                data-target="#como_comprar"
-                class="c_comprar esconder"
-              >
-                <span class="button-text">¿Cómo comprar en la web?</span>
-              </a>
-              <ul class="nav social-networks">
-                <li class="ml-md-0 mb-15">
-                  <a
-                    href="https://www.instagram.com/teleticket.oficial/"
-                    class="opacity-on-hover"
-                    target="_blank"
-                    ><img
-                      src="https://cdn.teleticket.com.pe/especiales/snacks/img/instagram-icon.svg"
-                      alt="image description"
-                  /></a>
-                </li>
-                <li class="ml-md-0 mb-15">
-                  <a
-                    href="https://vm.tiktok.com/ZMJ71narM/"
-                    class="opacity-on-hover"
-                    target="_blank"
-                    ><img
-                      src="https://cdn.teleticket.com.pe/especiales/snacks/img/tiktok-icon.png"
-                      alt="image description"
-                  /></a>
-                </li>
-                <li class="mx-md-0 mb-15">
-                  <a
-                    href="https://www.facebook.com/Teleticket/"
-                    class="opacity-on-hover"
-                    target="_blank"
-                    ><img
-                      src="https://cdn.teleticket.com.pe/especiales/snacks/img/facebook-icon.svg"
-                      alt="image description"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+              <div class="col-6 col-md-6 text-right">
+                <ul class="nav social-networks">
+                  <li class="ml-md-0 mb-15">
+                    <a
+                      href="https://www.instagram.com/teleticket.oficial/"
+                      class="opacity-on-hover"
+                      target="_blank"
+                      ><img
+                        src="https://cdn.teleticket.com.pe/especiales/snacks/img/instagram-icon.svg"
+                        alt="image description"
+                    /></a>
+                  </li>
+                  <li class="ml-md-0 mb-15">
+                    <a
+                      href="https://vm.tiktok.com/ZMJ71narM/"
+                      class="opacity-on-hover"
+                      target="_blank"
+                      ><img
+                        src="https://cdn.teleticket.com.pe/especiales/snacks/img/tiktok-icon.png"
+                        alt="image description"
+                    /></a>
+                  </li>
+                  <li class="mx-md-0 mb-15">
+                    <a
+                      href="https://www.facebook.com/Teleticket/"
+                      class="opacity-on-hover"
+                      target="_blank"
+                      ><img
+                        src="https://cdn.teleticket.com.pe/especiales/snacks/img/facebook-icon.svg"
+                        alt="image description"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </nav>
       </nav>
+
+      <!---PROD-->
+      <nav id="cabecera2020">
+        <nav
+          id="header"
+          class="header cabecera section-active pt-nav dark sticky-top"
+        >
+          <div class="container">
+            <nav class="row align-items-center">
+              <div class="col-6 col-md-6">
+                <a class="p-0 m-0" href="https://teleticket.com.pe/">
+                  <img
+                    class="img-fluid"
+                    src="https://cdn.teleticket.com.pe/images/logo-teleticket.png"
+                    alt="teleticket.com.pe"
+                  />
+                </a>
+              </div>
+
+              <div class="col-6 col-md-6 text-right">
+                <ul class="nav social-networks">
+                  <li class="ml-md-0 mb-15">
+                    <a
+                      href="https://www.instagram.com/teleticket.oficial/"
+                      class="opacity-on-hover"
+                      target="_blank"
+                      ><img
+                        src="https://cdn.teleticket.com.pe/especiales/snacks/img/instagram-icon.svg"
+                        alt="image description"
+                    /></a>
+                  </li>
+                  <li class="ml-md-0 mb-15">
+                    <a
+                      href="https://vm.tiktok.com/ZMJ71narM/"
+                      class="opacity-on-hover"
+                      target="_blank"
+                      ><img
+                        src="https://cdn.teleticket.com.pe/especiales/snacks/img/tiktok-icon.png"
+                        alt="image description"
+                    /></a>
+                  </li>
+                  <li class="mx-md-0 mb-15">
+                    <a
+                      href="https://www.facebook.com/Teleticket/"
+                      class="opacity-on-hover"
+                      target="_blank"
+                      ><img
+                        src="https://cdn.teleticket.com.pe/especiales/snacks/img/facebook-icon.svg"
+                        alt="image description"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </nav>
+      <!--script para header-->
+
+      <script>
+        var ifBeta = window.location.hostname.search("beta");
+        if (ifBeta >= 0) {
+          $("#cabecera2021").show();
+          $("#cabecera2020").hide();
+        } else {
+          $("#cabecera2020").show();
+          $("#cabecera2021").hide();
+        }
+      </script>
+      <!--script para header-->
 
       <main id="main">
         <div class="img-logos-float">
           <img
-            src="recursos/images/logosfloat.png
+            src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/logosfloat.png
           "
             alt=""
             class="img-fluid"
@@ -315,12 +546,12 @@
                   <div>
                     <img
                       class="img-fluid vibra animate__animated animate__bounceIn"
-                      src="recursos/images/logo-vibra-peru.png"
+                      src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/logo-vibra-peru.png"
                       alt=""
                     />
                   </div>
 
-                  <div class="content-hours">
+                  <!--  <div class="content-hours">
                     <div class="container">
                       <div class="row">
                         <div class="col-12">
@@ -335,7 +566,7 @@
                             <p class="faltan"><b>SOLO FALTAN</b></p>
                           </div>
 
-                          <!--contador-->
+                         
                           <div class="time-event">
                             <div class="time-event">
                               <dive class="time">
@@ -364,15 +595,15 @@
                               </dive>
                             </div>
                           </div>
-                          <!--fin contador-->
+                   
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <img
                     class="img-fluid artistas animate__animated animate__fadeIn"
-                    src="recursos/images/artistas.png"
+                    src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/artistas.png"
                     alt=""
                   />
                 </div>
@@ -390,17 +621,17 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col_center plaza">
                 <img
                   class="img-fluid"
-                  src="recursos/images/plaza-arena.png"
+                  src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/plaza-arena.png"
                   alt=""
                 />
               </div>
             </div>
             <div class="row align-items-center">
-              <div class="col-md-8 col-sm-12 col_center">
+              <div class="col-md-12 col-lg-9 col-sm-12 col_center">
                 <div class="mapa">
                   <img
                     class="img-fluid img_mapa"
-                    src="recursos/images/mapa.png"
+                    src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/mapa-2.png"
                     alt=""
                   />
                 </div>
@@ -413,6 +644,19 @@
                           <thead>
                             <tr>
                               <th>&nbsp;</th>
+                              <th
+                                class="text-center fecha-lanzamiento fecha-terminada header-cyber"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                <div class="img-cyber">
+                                  <img
+                                    class="img-fluid"
+                                    src="https://cdn.teleticket.com.pe/especiales/diaspatrios2022/images/header-cyber-2.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </th>
                               <th class="text-center">
                                 <span class="t_verde"
                                   >PREVENTA<br />30% DSCTO.</span
@@ -422,7 +666,11 @@
                                   15/07/22</span
                                 >
                               </th>
-                              <!-- <th class="text-center">
+                              <th
+                                class="text-center fecha-lanzamiento fecha-terminada"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 16:40"
+                              >
                                 <span class="t_verde"
                                   >PREVENTA<br />20% DSCTO</span
                                 ><br />
@@ -430,11 +678,50 @@
                                   >Desde el 16/07/22<br />hasta el
                                   31/07/22</span
                                 >
-                              </th> -->
-                              <th class="text-center">
+                              </th>
+                              <th
+                                class="text-center fecha-lanzamiento fecha-terminada"
+                                data-date="27-07-2022 16:40"
+                                data-end="20-08-2022 16:42"
+                              >
+                                <span class="t_verde"
+                                  >PREVENTA<br />20% DSCTO</span
+                                ><br />
+                                <span class="minifechas"
+                                  >Desde el 02/08/22<br />hasta el
+                                  05/08/22</span
+                                >
+                              </th>
+                              <th
+                                class="text-center fecha-lanzamiento fecha-terminada"
+                                data-date="27-07-2022 16:00"
+                                data-end="27-07-2022 16:40"
+                              >
                                 <span class="t_verde">REGULAR</span><br />
                                 <span class="minifechas"
-                                  >Desde el 16/07/22<br />hasta el
+                                  >Desde el 01/08/22<br />hasta el
+                                  20/08/22</span
+                                >
+                              </th>
+                              <th
+                                class="text-center fecha-lanzamiento fecha-terminada"
+                                data-date="27-07-2022 16:40"
+                                data-end="27-07-2022 16:42"
+                              >
+                                <span class="t_verde">REGULAR</span><br />
+                                <span class="minifechas"
+                                  >Desde el 01/08/22<br />hasta el
+                                  02/08/22</span
+                                >
+                              </th>
+                              <th
+                                class="text-center fecha-lanzamiento fecha-terminada"
+                                data-date="27-07-2022 16:42"
+                                data-end="20-08-2022 16:59"
+                              >
+                                <span class="t_verde">REGULAR</span><br />
+                                <span class="minifechas"
+                                  >Desde el 06/08/22<br />hasta el
                                   20/08/22</span
                                 >
                               </th>
@@ -449,8 +736,17 @@
                                   <strong class="place-name">GENERAL</strong>
                                 </div>
                               </td>
-                              <td class="text-center">S/ 49.00</td>
-                              <!-- <td class="text-center">S/ 55.00</td> -->
+                              <td
+                                class="text-center fecha-lanzamiento fecha-terminada td-cyber"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                S/ 55.00
+                              </td>
+                              <td class="text-center">
+                                <strike> S/ 49.00</strike>
+                              </td>
+                              <td class="text-center">S/ 55.00</td>
                               <td class="text-center">S/ 69.00</td>
                               <td class="text-center">4000</td>
                             </tr>
@@ -463,10 +759,19 @@
                                   <span>INDIVIDUAL</span>
                                 </div>
                               </td>
-                              <td class="text-center">S/ 109.00</td>
-                              <!--    <td class="text-center">S/ 119.00</td> -->
+                              <td
+                                class="text-center fecha-lanzamiento fecha-terminada td-cyber"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                S/ 119.00
+                              </td>
+                              <td class="text-center">
+                                <strike>S/ 104.00</strike>
+                              </td>
+                              <td class="text-center">S/ 119.00</td>
                               <td class="text-center">S/ 149.00</td>
-                              <td class="text-center">420</td>
+                              <td class="text-center">300</td>
                             </tr>
 
                             <tr>
@@ -475,14 +780,23 @@
                                   <span class="badge badge-dos">&nbsp;</span>
                                   <strong class="place-name"
                                     >BOX VIP<br />
-                                    <span>12 PERSONAS</span>
+                                    <span>10 PERSONAS</span>
                                   </strong>
                                 </div>
                               </td>
-                              <td class="text-center">S/ 1,308.00</td>
-                              <!-- <td class="text-center">S/ 1,428.00</td> -->
+                              <td
+                                class="text-center fecha-lanzamiento fecha-terminada td-cyber"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                S/ 1,190.00
+                              </td>
+                              <td class="text-center">
+                                <strike>S/ 1,040.00</strike>
+                              </td>
+                              <td class="text-center">S/ 1,190.00</td>
                               <td class="text-center">S/ 1,490.00</td>
-                              <td class="text-center">780</td>
+                              <td class="text-center">800</td>
                             </tr>
 
                             <tr>
@@ -495,10 +809,19 @@
                                   </strong>
                                 </div>
                               </td>
-                              <td class="text-center">S/ 139.00</td>
-                              <!--   <td class="text-center">S/ 159.00</td> -->
+                              <td
+                                class="text-center fecha-lanzamiento fecha-terminada td-cyber"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                S/ 159.00
+                              </td>
+                              <td class="text-center">
+                                <strike> S/ 139.00</strike>
+                              </td>
+                              <td class="text-center">S/ 159.00</td>
                               <td class="text-center">S/ 199.00</td>
-                              <td class="text-center">1008</td>
+                              <td class="text-center">840</td>
                             </tr>
                             <tr>
                               <td>
@@ -506,14 +829,23 @@
                                   <span class="badge badge-cuatro">&nbsp;</span>
                                   <strong class="place-name"
                                     >BOX VIBRALANDIA<br />
-                                    <span>12 PERSONAS</span>
+                                    <span>10 PERSONAS</span>
                                   </strong>
                                 </div>
                               </td>
-                              <td class="text-center">S/ 1,668.00</td>
-                              <!--  <td class="text-center">S/ 1,908.00</td> -->
-                              <td class="text-center">S/ 2,388.00</td>
-                              <td class="text-center">2064</td>
+                              <td
+                                class="text-center fecha-lanzamiento fecha-terminada td-cyber"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                S/ 1,590.00
+                              </td>
+                              <td class="text-center">
+                                <strike>S/ 1,390.00</strike>
+                              </td>
+                              <td class="text-center">S/ 1,590.00</td>
+                              <td class="text-center">S/ 1,990.00</td>
+                              <td class="text-center">2440</td>
                             </tr>
                           </tbody>
                         </table>
@@ -521,85 +853,96 @@
                     </div>
 
                     <div id="choose-tickets-section text-center">
-                      <div class="btn-group">
+                      <div
+                        class="btn-group fecha-lanzamiento fecha-terminada"
+                        data-date="27-07-2022 16:00"
+                        data-end="27-07-2022 16:40"
+                      >
                         <button
                           type="button"
                           class="btn btn-danger_desplegable dropdown-toggle eli_top"
                           data-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
-                          disabled
                         >
                           <i class="icon-tickets"></i
-                          ><span class="button-text">PREVENTA 30% DSCTO</span>
+                          ><span class="button-text">PREVENTA 20% DSCTO</span>
                         </button>
                         <div class="dropdown-menu">
                           <a
-                            class="dropdown-item"
-                            href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=6"
-                            >GENERAL</a
+                            class="dropdown-item {{teleticket.com.pe.link_cal1_cat6_inactivo}}"
+                            href="{{teleticket.com.pe.link_cal1_cat6}}"
+                            >BOX COMPLETO</a
                           >
                           <div class="dropdown-divider"></div>
                           <a
-                            class="dropdown-item"
-                            href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=7"
-                            >VIP</a
-                          >
-                          <div class="dropdown-divider"></div>
-                          <a
-                            class="dropdown-item"
-                            href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=8"
-                            >BOX PLATINUM (INDIVIDUAL)</a
-                          >
-                          <div class="dropdown-divider"></div>
-                          <a
-                            class="dropdown-item"
-                            href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=9"
-                            >BOX PLATINUM (10 PERSONAS)</a
+                            class="dropdown-item {{teleticket.com.pe.link_cal1_cat7_inactivo}}"
+                            href="{{teleticket.com.pe.link_cal1_cat7}}"
+                            >ENTRADAS INDIVIDUAL</a
                           >
                           <div class="dropdown-divider"></div>
                         </div>
                       </div>
-
-                      <!--<div class="btn-group">
-                        <button type="button" class="btn btn-danger_desplegable dropdown-toggle eli_top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-tickets"></i><span class="button-text">PREVENTA 20% DSCTO</span>
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=10">GENERAL</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=11">VIP</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=12">BOX PLATINUM (INDIVIDUAL)</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=13">BOX PLATINUM (10 PERSONAS)</a>
-                          <div class="dropdown-divider"></div>
-                        </div>
-                    </div>-->
-
-                      <!--<div class="btn-group">
-                        <button type="button" class="btn btn-danger_desplegable dropdown-toggle eli_top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-tickets"></i><span class="button-text">NORMAL</span>
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=2">GENERAL</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=3">VIP</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=4">BOX PLATINUM (INDIVIDUAL)</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://compra.teleticket.com.pe/Compra/CategoriaTicket?EventoID=COP001&CalID=1&CategoriaTicket=5">BOX PLATINUM (10 PERSONAS)</a>
-                          <div class="dropdown-divider"></div>
-                        </div>
-                    </div>-->
-
-                      <a
-                        href=""
-                        class="btn btn-lg btn_inactive btn-primary btn-block disabled"
+                      <div
+                        class="btn-group fecha-lanzamiento fecha-terminada"
+                        data-date="27-07-2022 16:40"
+                        data-end="27-07-2022 16:42"
                       >
-                        <i class="icon-tickets"></i
-                        ><span class="button-text">REGULAR</span>
-                      </a>
+                        <button
+                          type="button"
+                          class="btn btn-danger_desplegable dropdown-toggle eli_top"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="icon-tickets"></i
+                          ><span class="button-text">REGULAR</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a
+                            class="dropdown-item {{teleticket.com.pe.link_cal1_cat2_inactivo}}"
+                            href="{{teleticket.com.pe.link_cal1_cat2}}"
+                            >BOX COMPLETO</a
+                          >
+                          <div class="dropdown-divider"></div>
+                          <a
+                            class="dropdown-item {{teleticket.com.pe.link_cal1_cat3_inactivo}}"
+                            href="{{teleticket.com.pe.link_cal1_cat3}}"
+                            >ENTRADAS INDIVIDUAL</a
+                          >
+                          <div class="dropdown-divider"></div>
+                        </div>
+                      </div>
+                      <div
+                        class="btn-group fecha-lanzamiento fecha-terminada"
+                        data-date="27-07-2022 16:42"
+                        data-end="27-07-2022 23:59"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-danger_desplegable dropdown-toggle eli_top"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="icon-tickets"></i
+                          ><span class="button-text">PREVENTA 20% DSCTO</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a
+                            class="dropdown-item {{teleticket.com.pe.link_cal1_cat6_inactivo}}"
+                            href="{{teleticket.com.pe.link_cal1_cat6}}"
+                            >BOX COMPLETO</a
+                          >
+                          <div class="dropdown-divider"></div>
+                          <a
+                            class="dropdown-item {{teleticket.com.pe.link_cal1_cat7_inactivo}}"
+                            href="{{teleticket.com.pe.link_cal1_cat7}}"
+                            >ENTRADAS INDIVIDUAL</a
+                          >
+                          <div class="dropdown-divider"></div>
+                        </div>
+                      </div>
 
                       <div class="links">
                         <a
@@ -643,16 +986,11 @@
                 <div class="row biography-row">
                   <div class="card-biography">
                     <div class="row">
-                      <!---<div class="col-12 col-md-7 col-lg-7 col_center mb_45">
-                        <div class="embed-responsive embed-responsive-16by9 mb_30">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2q6tThmBcR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                        </div>
-                    </div>-->
-
                       <div class="col-12 col-md-7 col-lg-7 col_center">
                         <iframe
+                          style="border-radius: 12px"
                           class="r_spotify"
-                          src="https://open.spotify.com/embed/playlist/42hnVFYmFKu1aQVECydIli?utm_source=generator"
+                          src="https://open.spotify.com/embed/playlist/778oZU8RqNoHmCWZ6waoO0?utm_source=generator"
                           width="100%"
                           height="480"
                           frameborder="0"
@@ -667,7 +1005,7 @@
                         <div class="row">
                           <div class="col-12 col-md-12 col-lg-12 text-center">
                             <img
-                              src="recursos/images/logo-vibra-peru.png"
+                              src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/logo-vibra-peru.png"
                               class="img-fluid mb_45 blessd"
                             />
                           </div>
@@ -676,17 +1014,19 @@
                             class="col-12 col-md-12 col-lg-12 text-justify legales"
                           >
                             <ul class="marks-list small pb-5">
-                              <!--<li>
-                                      <span class="marker">*</span>
-                                      <span class="list-text">
-                                        <b>Cola Virtual:</b> Antes del inicio de la venta podrás estar en una sala de espera que es un
-                                        espacio que albergará a todos los fans de Anuel AA que entren al banner del evento, cuando
-                                        la venta inicie a las 09:00 a.m. el sistema te redireccionará a la COLA VIRTUAL, se te asignará
-                                        un lugar aleatorio y tiempo aproximado de espera, esto hará que desde las 09:00 a.m. todos
-                                        tengan la misma oportunidad de compra independientemente de la hora que hayan ingresado al
-                                        banner del evento o sala de espera.
-                                      </span>
-                            </li>-->
+                              <li
+                                class="fecha-lanzamiento fecha-terminada"
+                                data-date="27-07-2022 10:00"
+                                data-end="27-07-2022 23:59"
+                              >
+                                <span class="marker">*</span>
+                                <span class="list-text">
+                                  <b>DÍAS PATRIOS:</b> Descuento NO aplica a la
+                                  comision tlk Stock: 100. Venta exclusiva por
+                                  pagina web y punto de venta. Aplica a todos
+                                  los medios de pago.
+                                </span>
+                              </li>
 
                               <li>
                                 <span class="marker">*</span>
@@ -775,7 +1115,7 @@
                               <li>
                                 <span class="marker">*</span>
                                 <span class="list-text">
-                                  Capacidad máxima de BOX : 12 personas. Se
+                                  Capacidad máxima de BOX : 10 personas. Se
                                   emitirá 1 e-ticket por persona.
                                 </span>
                               </li>
@@ -792,7 +1132,7 @@
 
           <img
             class="img-fluid"
-            src="recursos/images/footer-vibra.png"
+            src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/footer-vibra.png"
             alt=""
           />
         </div>
@@ -800,26 +1140,29 @@
         <!--<div class="logos_marcas  mb_45">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12 text-center">
-                <img src="recursos/images/logos-fonsi.png" class="img-fluid">
+                <img src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/images/logos-fonsi.png" class="img-fluid">
               </div>
         </div>
       </div>-->
 
-        <footer class="footer">
+        <footer class="footer" id="footer2020">
           <div class="container">
-            <!-- <div class="">
-              <ul style="    text-align: center;
-              justify-content: center;
-              padding-bottom: 18px;
-              color: white;" class="-nav navbar-nav compra">
-                <li  class="nav-item link-info"><a href="#" data-toggle="modal" data-target="#exampleModal" style="color:white"  class=" nav-link">Cómo ver un vídeo</a></li>
-                <li class="nav-item link-info"><a href="#" data-toggle="modal" data-target="#exampleModal2" style="color:white"  class=" nav-link">Cómo comprar</a></li>
-              </ul>
-            </div> -->
             <div class="container footer-cont">
               <img
                 class="img-fluid"
-                src="recursos/images/footer-logo-tlk.png"
+                src="https://cdn.teleticket.com.pe/especiales/festival-juntos-en-concierto-2022/images/footer-logo-tlk.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </footer>
+
+        <footer class="footer" id="footer2021">
+          <div class="container">
+            <div class="container footer-cont">
+              <img
+                class="img-fluid"
+                src="https://cdn.teleticket.com.pe/images/logo-teleticket-2022.png"
                 alt=""
               />
             </div>
@@ -903,20 +1246,39 @@
       </div>
     </div>
 
-    <!--scrool-->
-    <script src="recursos/js/smooth-scroll.polyfills.min.js"></script>
+    <!--script para footer-->
     <script>
-      var scroll = new SmoothScroll('a[href*="#"]');
+      var ifBeta = window.location.hostname.search("beta");
+      if (ifBeta >= 0) {
+        $("#footer2021").show();
+        $("#footer2020").hide();
+      } else {
+        $("#footer2020").show();
+        $("#footer2021").hide();
+      }
     </script>
-    <!--scrool-->
+    <!--script para footer-->
 
-    <script type="text/javascript" src="recursos/js/downCount.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.teleticket.com.pe/especiales/vibra-peru-2-2022/js/downCount.js"
+    ></script>
     <script class="source" type="text/javascript">
       $(".countdown").downCount({
         date: "07/11/2022 10:00:00", //mm/dd/aaaa
         offset: -5,
       });
     </script>
+
+    <!--loader js-->
+    <script
+      type="text/javascript"
+      src="https://cdn.teleticket.com.pe/especiales/diaspatrios2022/js/programafechas.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.teleticket.com.pe/especiales/diaspatrios2022/js/main-loader.js"
+    ></script>
 
     <script type="text/javascript">
       $(".modal.stop-video-on-close").on("hidden.bs.modal", function (e) {
